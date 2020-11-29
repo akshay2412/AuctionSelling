@@ -9,7 +9,7 @@ node {
    }
        stage('Configure') {
         def defaultConfigure = '--with-openssl --enable-mbstring --with-zlib --enable-zip --without-pear';
-        bat('./buildconf --force');
+        bat('buildconf --force');
         def debugConfigure = '--enable-debug';
         if(DEBUG != 'true') {
             debugConfigure = '';
