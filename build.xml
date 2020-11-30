@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="YourProject" default="build" basedir=".">
+<project name="AuctionSelling" default="build" basedir=".">
     <property name="build-dir" value="${basedir}/build" />
-    <property name="src-dir" value="${basedir}/src" />
+    <property name="src-dir" value="${basedir}/Auction" />
 
     <target name="build"
         depends="build-common,phploc,phpdox,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpcb" />
